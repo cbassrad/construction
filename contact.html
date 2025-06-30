@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us - MJV Builder LTD | Get in Touch for Expert Construction Services</title>
+
+  <meta name="description" content="Contact MJV Builder LTD for expert construction services. Call, email, or visit us for your home building and remodeling needs." />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Contact Us - MJV Builder LTD | Get in Touch for Expert Construction Services" />
+  <meta property="og:description" content="Contact MJV Builder LTD for expert construction services. Call, email, or visit us for your home building and remodeling needs." />
+  <meta property="og:url" content="https://www.yourdomain.com/contact.html" />
+  <meta property="og:image" content="https://www.yourdomain.com/images/contact-bg.png" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Contact Us - MJV Builder LTD | Get in Touch for Expert Construction Services" />
+  <meta name="twitter:description" content="Contact MJV Builder LTD for expert construction services. Call, email, or visit us for your home building and remodeling needs." />
+  <meta name="twitter:image" content="https://www.yourdomain.com/images/contact-bg.png" />
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    body {
+      background: url('images/contact-bg.png') no-repeat center center fixed;
+      background-size: cover;
+      margin: 0;
+      min-height: 100vh;
+    }
+    .overlay {
+      background: rgba(255, 255, 255, 0.6);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    h2, p {
+      color: #222;
+      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+    }
+    section {
+      background: rgba(255, 255, 255, 0.75);
+      border-radius: 8px;
+      padding: 1.5rem;
+      max-width: 800px;
+      margin: 2rem auto;
+    }
+    .footer-links a {
+      margin: 0 10px;
+      color: #ffffff;
+      text-decoration: none;
+    }
+    .footer-links a:hover {
+      text-decoration: underline;
+    }
+    .success-message {
+      display: none;
+      text-align: center;
+      color: green;
+      font-weight: bold;
+      margin-bottom: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="overlay">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">MJV Builder LTD</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+            <li class="nav-item"><a class="nav-link" href="exterior-transformation.html">Exterior</a></li>
+            <li class="nav-item"><a class="nav-link" href="living-room.html">Living Room</a></li>
+            <li class="nav-item"><a class="nav-link" href="loft-conversion.html">Loft</a></li>
+            <li class="nav-item"><a class="nav-link" href="kitchen-remodeling.html">Kitchen</a></li>
+            <li class="nav-item"><a class="nav-link" href="bathroom-remodeling.html">Bathroom</a></li>
+            <li class="nav-item"><a class="nav-link" href="shower-upgrade.html">Shower</a></li>
+            <li class="nav-item"><a class="nav-link active" href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section>
+      <h2 class="text-center mb-4">Contact Us</h2>
+      <div class="text-center mb-4">
+        <p><strong>Phone:</strong> (123) 456-7890</p>
+        <p><strong>Email:</strong> <a href="mailto:contact@mjvbuilder.com">contact@mjvbuilder.com</a></p>
+        <p><strong>Address:</strong> 123 Builder Lane, Construct City, TX 75001</p>
+      </div>
+
+      <div id="successMessage" class="success-message" role="alert" aria-live="polite">Thank you for your message! We will get back to you shortly.</div>
+
+      <form id="contactForm" action="https://formspree.io/f/mdkzblar" method="POST" novalidate>
+        <div class="row mb-3">
+          <div class="col-md-6">
+            <label for="firstName" class="form-label">First Name*</label>
+            <input type="text" class="form-control" id="firstName" name="firstName" required aria-required="true" />
+            <div class="invalid-feedback">First name is required.</div>
+          </div>
+          <div class="col-md-6">
+            <label for="lastName" class="form-label">Last Name</label>
+            <input type="text" class="form-control" id="lastName" name="lastName" />
+          </div>
+        </div>
+
+        <div class="row mb-3">
+          <div class="col-md-6">
+            <label for="email" class="form-label">Email*</label>
+            <input type="email" class="form-control" id="email" name="email" required aria-required="true" />
+            <div class="invalid-feedback">Valid email is required.</div>
+          </div>
+          <div class="col-md-6">
+            <label for="phone" class="form-label">Phone</label>
+            <input type="tel" class="form-control" id="phone" name="phone" />
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label for="message" class="form-label">Message*</label>
+          <textarea class="form-control" id="message" name="message" rows="6" placeholder="Write your message here..." required aria-required="true"></textarea>
+          <div class="invalid-feedback">Please enter your message.</div>
+        </div>
+
+        <div class="d-flex justify-content-center gap-3">
+          <button type="submit" class="btn btn-primary">Submit</button>
+          <button type="reset" class="btn btn-secondary">Clear</button>
+        </div>
+      </form>
+    </section>
+
+    <footer class="bg-dark text-light text-center py-3">
+      <div class="footer-links mb-2">
+        <a href="index.html">Home</a> |
+        <a href="projects.html">Projects</a> |
+        <a href="exterior-transformation.html">Exterior</a> |
+        <a href="living-room.html">Living Room</a> |
+        <a href="loft-conversion.html">Loft</a> |
+        <a href="kitchen-remodeling.html">Kitchen</a> |
+        <a href="bathroom-remodeling.html">Bathroom</a> |
+        <a href="shower-upgrade.html">Shower</a> |
+        <a href="contact.html">Contact Us</a>
+      </div>
+      &copy; 2025 MJV Builder LTD. All rights reserved.
+    </footer>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    const form = document.getElementById('contactForm');
+    const successMessage = document.getElementById('successMessage');
+
+    form.addEventListener('submit', async function (e) {
+      e.preventDefault();
+
+      // Simple HTML5 validation
+      if (!form.checkValidity()) {
+        form.classList.add('was-validated');
+        return;
+      }
+
+      const formData = new FormData(form);
+
+      try {
+        const response = await fetch(form.action, {
+          method: 'POST',
+          body: formData,
+          headers: { Accept: 'application/json' }
+        });
+
+        if (response.ok) {
+          successMessage.style.display = 'block';
+          alert('Thank you for your message! We will get back to you shortly.');
+          form.reset();
+          form.classList.remove('was-validated');
+        } else {
+          alert('There was a problem sending your message. Please try again later.');
+        }
+      } catch (error) {
+        alert('An error occurred. Please try again later.');
+      }
+    });
+  </script>
+</body>
+</html>

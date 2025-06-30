@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Home Renovation Projects | MJV Builder LTD</title>
+
+  <!-- SEO Meta Description -->
+  <meta name="description" content="Explore completed renovation projects by MJV Builder LTD, including kitchen, bathroom, loft, and exterior transformations. See before-and-after photos of our quality work.">
+
+  <!-- Open Graph (Facebook, LinkedIn) -->
+  <meta property="og:title" content="Our Projects | MJV Builder LTD">
+  <meta property="og:description" content="See our portfolio of home improvement projects including kitchens, bathrooms, lofts, and more.">
+  <meta property="og:image" content="https://yourdomain.com/images/background-projects.jpg">
+  <meta property="og:url" content="https://yourdomain.com/projects.html">
+  <meta property="og:type" content="website">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Our Projects | MJV Builder LTD">
+  <meta name="twitter:description" content="Explore our renovation projects including before-and-after photos of kitchens, bathrooms, lofts, and more.">
+  <meta name="twitter:image" content="https://yourdomain.com/images/background-projects.jpg">
+
+  <!-- Favicon (optional) -->
+  <link rel="icon" type="image/png" href="images/favicon.png" />
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    body {
+      background: url('images/background-projects.jpg') no-repeat center center fixed;
+      background-size: cover;
+      margin: 0;
+      min-height: 100vh;
+    }
+    .overlay {
+      background: rgba(255, 255, 255, 0.6);
+      min-height: 100vh;
+      padding-top: 1rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    h2 {
+      color: #222;
+      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+      text-align: center;
+      font-size: 2rem;
+      font-weight: 400;
+      margin-bottom: 0.5rem;
+    }
+    h4 {
+      color: #222;
+      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+      text-align: center;
+      margin-top: 2rem;
+    }
+    h4 a {
+      text-decoration: none;
+      color: inherit;
+    }
+    h4 a:hover {
+      text-decoration: underline;
+    }
+    p.description {
+      max-width: 700px;
+      margin: 0 auto 1.5rem auto;
+      color: #222;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+      text-align: center;
+      background: rgba(255, 255, 255, 0.75);
+      border-radius: 6px;
+      padding: 0.5rem 1rem;
+    }
+    p.caption {
+      color: #222;
+      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+      background: rgba(255, 255, 255, 0.75);
+      border-radius: 6px;
+      padding: 0.25rem 0.5rem;
+      max-width: 140px;
+      margin: 0.25rem auto 1.5rem auto;
+      text-align: center;
+    }
+    .project-section {
+      max-width: 900px;
+      margin: 0 auto 3rem auto;
+      padding: 0 1rem;
+    }
+    .project-pair {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    .project-pair div {
+      text-align: center;
+    }
+    .project-pair img {
+      width: 100%;
+      height: 350px;
+      object-fit: cover;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    .footer-links a {
+      margin: 0 10px;
+      color: #ffffff;
+      text-decoration: none;
+    }
+    .footer-links a:hover {
+      text-decoration: underline;
+    }
+    #projectImageModal .modal-dialog {
+      max-width: 900px;
+    }
+    #projectImageModal .modal-body img {
+      width: 100%;
+      height: 600px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+  <div class="overlay">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">MJV Builder LTD</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+            <li class="nav-item"><a class="nav-link" href="exterior-transformation.html">Exterior</a></li>
+            <li class="nav-item"><a class="nav-link" href="living-room.html">Living Room</a></li>
+            <li class="nav-item"><a class="nav-link" href="loft-conversion.html">Loft</a></li>
+            <li class="nav-item"><a class="nav-link" href="kitchen-remodeling.html">Kitchen</a></li>
+            <li class="nav-item"><a class="nav-link" href="bathroom-remodeling.html">Bathroom</a></li>
+            <li class="nav-item"><a class="nav-link" href="shower-upgrade.html">Shower</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section class="project-section">
+      <h2>Our Projects</h2>
+
+      <h4><a href="exterior-transformation.html">Exterior Transformation</a></h4>
+      <p class="description">Revitalizing your home's exterior with quality craftsmanship to boost curb appeal and durability.</p>
+      <div class="project-pair">
+        <div>
+          <img src="images/exterior-before-1.png" alt="Residential Home exterior before renovation" data-index="0" />
+          <p class="caption">Before</p>
+        </div>
+        <div>
+          <img src="images/exterior-after-1.png" alt="Residential Home exterior after renovation" data-index="1" />
+          <p class="caption">After</p>
+        </div>
+      </div>
+
+      <h4><a href="living-room.html">Living Room Remodel</a></h4>
+      <p class="description">Creating cozy, modern living spaces that blend functionality and style seamlessly.</p>
+      <div class="project-pair">
+        <div>
+          <img src="images/livingroom-before-1.jpg" alt="Living Room before remodel" data-index="2" />
+          <p class="caption">Before</p>
+        </div>
+        <div>
+          <img src="images/livingroom-after-1.jpg" alt="Living Room after remodel" data-index="3" />
+          <p class="caption">After</p>
+        </div>
+      </div>
+
+      <h4><a href="loft-conversion.html">Finished Loft Space</a></h4>
+      <p class="description">Transforming unused spaces into functional and stylish lofts for modern living.</p>
+      <div class="project-pair">
+        <div>
+          <img src="images/loft-before-1.jpg" alt="Loft space before renovation" data-index="4" />
+          <p class="caption">Before</p>
+        </div>
+        <div>
+          <img src="images/loft-after-1.jpg" alt="Loft space after renovation" data-index="5" />
+          <p class="caption">After</p>
+        </div>
+      </div>
+
+      <h4><a href="kitchen-remodeling.html">Kitchen Remodeling</a></h4>
+      <p class="description">Upgrading kitchens with the latest designs and appliances to fit your lifestyle.</p>
+      <div class="project-pair">
+        <div>
+          <img src="images/kitchen-1-before.jpg" alt="Kitchen before remodel" data-index="6" />
+          <p class="caption">Before</p>
+        </div>
+        <div>
+          <img src="images/kitchen-1-after.jpg" alt="Kitchen after remodel" data-index="7" />
+          <p class="caption">After</p>
+        </div>
+      </div>
+
+      <h4><a href="bathroom-remodeling.html">Bathroom Makeover</a></h4>
+      <p class="description">Enhancing bathrooms with modern fixtures and stylish finishes.</p>
+      <div class="project-pair">
+        <div>
+          <img src="images/bathroom-before-1.jpg" alt="Bathroom before remodel" data-index="8" />
+          <p class="caption">Before</p>
+        </div>
+        <div>
+          <img src="images/bathroom-after-1.jpg" alt="Bathroom after remodel" data-index="9" />
+          <p class="caption">After</p>
+        </div>
+      </div>
+
+      <h4><a href="shower-upgrade.html">Shower Area Upgrade</a></h4>
+      <p class="description">Modernizing showers for improved aesthetics, functionality, and comfort.</p>
+      <div class="project-pair">
+        <div>
+          <img src="images/shower-before-1.jpg" alt="Shower area before upgrade" data-index="10" />
+          <p class="caption">Before</p>
+        </div>
+        <div>
+          <img src="images/shower-after-1.jpg" alt="Shower area after upgrade" data-index="11" />
+          <p class="caption">After</p>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-dark text-light text-center py-3">
+      <div class="footer-links mb-2">
+        <a href="index.html">Home</a> |
+        <a href="projects.html">Projects</a> |
+        <a href="exterior-transformation.html">Exterior</a> |
+        <a href="living-room.html">Living Room</a> |
+        <a href="loft-conversion.html">Loft</a> |
+        <a href="kitchen-remodeling.html">Kitchen</a> |
+        <a href="bathroom-remodeling.html">Bathroom</a> |
+        <a href="shower-upgrade.html">Shower</a> |
+        <a href="contact.html">Contact Us</a>
+      </div>
+      &copy; 2025 MJV Builder LTD. All rights reserved.
+    </footer>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="projectImageModal" tabindex="-1" aria-labelledby="projectImageModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header position-relative">
+          <button type="button" class="btn-close position-absolute top-0 end-0 m-2" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body text-center">
+          <img src="" alt="Project Large View" id="modalImage" />
+        </div>
+        <div class="modal-footer justify-content-between">
+          <button type="button" class="btn btn-secondary" id="prevBtn">&#8592; Previous</button>
+          <button type="button" class="btn btn-secondary" id="nextBtn">Next &#8594;</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    const images = [
+      'images/exterior-before-1.png',
+      'images/exterior-after-1.png',
+      'images/livingroom-before-1.jpg',
+      'images/livingroom-after-1.jpg',
+      'images/loft-before-1.jpg',
+      'images/loft-after-1.jpg',
+      'images/kitchen-1-before.jpg',
+      'images/kitchen-1-after.jpg',
+      'images/bathroom-before-1.jpg',
+      'images/bathroom-after-1.jpg',
+      'images/shower-before-1.jpg',
+      'images/shower-after-1.jpg'
+    ];
+
+    let currentIndex = 0;
+    const modalImage = document.getElementById('modalImage');
+    const modal = new bootstrap.Modal(document.getElementById('projectImageModal'));
+    const prevBtn = document.getElementById('prevBtn');
+    const nextBtn = document.getElementById('nextBtn');
+
+    function showImage(index) {
+      currentIndex = index;
+      modalImage.src = images[currentIndex];
+      modal.show();
+    }
+
+    document.querySelectorAll('.project-pair img').forEach(img => {
+      img.addEventListener('click', e => {
+        const index = parseInt(e.target.getAttribute('data-index'));
+        showImage(index);
+      });
+    });
+
+    prevBtn.addEventListener('click', () => {
+      currentIndex = (currentIndex - 1 + images.length) % images.length;
+      modalImage.src = images[currentIndex];
+    });
+
+    nextBtn.addEventListener('click', () => {
+      currentIndex = (currentIndex + 1) % images.length;
+      modalImage.src = images[currentIndex];
+    });
+  </script>
+</body>
+</html>
